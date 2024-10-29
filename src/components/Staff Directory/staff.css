@@ -1,0 +1,14 @@
+.teachers-menu {
+    display: flex;
+    top: 97px;
+}
+@media only screen and (max-width: 415px) {
+    .d-flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .teachers-menu{
+        display: flex;
+    }
+  }

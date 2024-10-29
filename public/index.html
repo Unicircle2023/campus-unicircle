@@ -1,0 +1,2230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- <script type="text/javascript"> document.write("<base href='//" + document.location.host + "' />")</script> -->
+  <!-- <meta name="description" content="Web site created using create-react-app" /> -->
+
+  <!-- Calender scripts and links start(pallavi)  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- <meta name="description" content="Syncfusion React UI Components" /> -->
+  <!-- <meta name="author" content="Syncfusion" /> -->
+  <!-- <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" /> -->
+  <link href="//cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" />
+  <link href="//cdn.syncfusion.com/ej2/ej2-react-buttons/styles/material.css" rel="stylesheet" />
+  <link href="//cdn.syncfusion.com/ej2/ej2-react-calendars/styles/material.css" rel="stylesheet" />
+  <link href="//cdn.syncfusion.com/ej2/ej2-react-dropdowns/styles/material.css" rel="stylesheet" />
+  <link href="//cdn.syncfusion.com/ej2/ej2-react-inputs/styles/material.css" rel="stylesheet" />
+  <link href="//cdn.syncfusion.com/ej2/ej2-react-navigations/styles/material.css" rel="stylesheet" />
+  <link href="//cdn.syncfusion.com/ej2/ej2-react-popups/styles/material.css" rel="stylesheet" />
+  <link href="//cdn.syncfusion.com/ej2/ej2-react-schedule/styles/material.css" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+  <link href="  https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  <!-- calender scripts and links end (pallavi) -->
+
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <!-- <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css"> -->
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+
+  <!-- Summernote dependency links -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/codemirror.css">
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/theme/monokai.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css">
+
+  <!-- <link href="../public/plugins/summernote/summernote.css"> -->
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jodit/3.6.4/jodit.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jodit/3.6.4/jodit.min.js"></script>
+  <script src="bundle.js "></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jodit/4.0.0-beta.50/es2021/jodit.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jodit/4.0.0-beta.50/es2021/jodit.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/jodit@4.0.0-beta.50/es2021/jodit.min.css" />
+  <script src="https://unpkg.com/jodit@4.0.0-beta.50/es2021/jodit.min.js"></script>
+
+
+
+  <!-- alphabet navigation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <!-- add more option -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <!-- input emoji -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://onesignal.github.io/emoji-picker/lib/css/emoji.css"> -->
+
+  <!-- horizotal student tab -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+
+
+  <!-- toggle -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- GOOGLE map -->
+  <!-- faq tabs actegory -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+  <!-- Alert box -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"> -->
+
+  <!-- modal -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css"> -->
+
+  <!-- Tabs -->
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+
+  <!-- graph -->
+
+  <!-- <script type="text/javascript" src="https://www.google.com/jsapi"></script> -->
+  <!-- Line chart -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" /> -->
+
+  <!-- donut chart -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/britecharts/dist/css/britecharts.min.css" /> -->
+
+  <!-- progress status -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+
+  <!-- Datatable -->
+
+  <!-- vertical dropdown header -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+
+  <!-- faq category -->
+  <link href='https://fonts.googleapis.com/css?family=Lato:100,400,700' rel='stylesheet' type='text/css'>
+  <!-- create event -->
+  <!-- <link href="fullcalendar/core/main.css" rel="stylesheet" />
+<link href="fullcalendar/daygrid/main.css" rel="stylesheet" />
+<link href="fullcalendar/timegrid/main.css" rel="stylesheet" />
+<link href="fullcalendar/list/main.css" rel="stylesheet" />
+<script src="fullcalendar/core/main.js"></script>
+<script src="fullcalendar/daygrid/main.js"></script>
+<script src="fullcalendar/timegrid/main.js"></script>
+<script src="fullcalendar/list/main.js"></script>
+<script src="fullcalendar/interaction/main.js"></script>
+<script src="fullcalendar/google-calendar/main.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let calendarEl = document.getElementById("calendar");
+
+        let calendar = new FullCalendar.Calendar(calendarEl, {
+    plugins: ["dayGrid", "timeGrid", "list", "interaction", "googleCalendar"],
+    selectable: true,
+    googleCalendarApiKey: "AIzaSyBjUtkb6kgiCZAOl87SadtCYbw2iOcdFh0",
+    events: {
+        googleCalendarId: "Your Calendar ID goes here"
+    }
+});
+
+        calendar.render();
+    });
+</script> -->
+
+  <!-- navvar cative link -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- calender -->
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css' rel='stylesheet'
+    type='text/css'>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css' rel='stylesheet'
+    type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'
+    type='text/css'>
+  <title>Admin Panel</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- links for calendar "akshay" -->
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="%PUBLIC_URL%/cal/dist/simple-calendar.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/cal/assets/demo.css">
+  <style>
+    .main_sell {
+      padding: 30px 40px 30px 40px;
+      border-radius: 10px;
+      flex-direction: row;
+      display: flex;
+      display: flex;
+      background-color: #FFFFFF;
+      padding: 8px;
+      background-color: #171717;
+      border: 1px solid;
+      border-image-source: #fff;
+      border-image-slice: 1;
+    }
+
+    .abcd {
+      padding: 8px;
+      background-color: #171717;
+      border: 1px solid;
+      border-image-source: #fff;
+      border-image-slice: 1;
+      border-radius: 10px;
+    }
+
+    .calendar .day.has-event:after {
+      content: '';
+      position: absolute !important;
+      top: calc(0%) !important;
+      left: -1px !important;
+      /* width: 37px !important;
+    height: 37px!important;
+    border-radius: 50% !important; */
+      /* background: #174687a6 !important; */
+      /* z-index: -0.1 !important; */
+    }
+
+    #main_cal .calendar table td,
+    th {
+      padding: 0;
+      margin: 0;
+      border: 2px solid #eff6ff;
+      text-align: center;
+    }
+
+    .material {
+      display: none;
+    }
+
+    .calendar-container {
+      /* border-radius: 30px; */
+      position: relative;
+      margin-top: 5px;
+      /* border:1px solid red; */
+      /*margin: 50px auto;*/
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      /*max-width: 500px;*/
+    }
+
+
+    /* akshays code */
+    
+
+
+    .card:after {
+      /* content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 200%;
+      pointer-events: none;
+      
+      transform: translateY(-50%);
+      transition: transform calc(var(--d) * 2) var(--e); */
+    }
+  </style>
+
+  <!-- activity log -->
+
+
+  <script>
+    $('.AlphabetNav a').click(function (evt) {
+      evt.preventDefault();
+
+      var $navItem = $(this),
+        $contacts = $('.Contact');
+
+      $contacts.show();
+
+      if ($navItem.hasClass('active')) {
+        $navItem.removeClass('active');
+      } else {
+        $('.AlphabetNav a').removeClass('active');
+        $navItem.addClass('active');
+
+        $.each($contacts, function (key, contact) {
+          var $contact = $(contact),
+            $contactName = $contact.find('.Contact-name'),
+            $nameArr = $contactName.text().split(' ');
+
+          console.log($nameArr[0].split('')[0].toLowerCase());
+
+          if ($nameArr[0].split('')[0].toLowerCase() !== $navItem.text().toLowerCase()) {
+            $contact.hide();
+          }
+        });
+      }
+    });
+
+
+  </script>
+  <script>
+    var loadFile = function (event) {
+      var image = document.getElementById('output');
+      image.src = URL.createObjectURL(event.target.files[0]);
+    };
+  </script>
+
+  <!-- add course -->
+  <script>
+    $(document).ready(function () {
+      $("#coursebutton").click(function () {
+        $("#coursebutton").css({ "width": "93%", "left": "18%" });
+        $("#welcomeDiv").toggle(
+          function () {
+            $("#coursebutton").css({ "width": "25%", "left": "18%" });
+            $("#welcomeDiv").animate({ top: "10%" }, 500);
+          }
+        );
+      });
+      $(".search_box").attr("autoComplete", "off");
+      $(".all_inputs").attr("autoComplete", "off");
+    });
+
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!--  -->
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.tab-a').click(function () {
+        $(".tab").removeClass('tab-active');
+        $(".tab[data-id='" + $(this).attr('data-id') + "']").addClass("tab-active");
+        $(".tab-a").removeClass('active-a');
+        $(this).parent().find(".tab-a").addClass('active-a');
+      });
+    });
+
+
+  </script>
+
+  <!-- jQuery -->
+
+
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- jQuery UI 1.11.4 -->
+  <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+  <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+  <script>
+    $.widget.bridge('uibutton', $.ui.button)
+  </script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- ChartJS -->
+  <script src="plugins/chart.js/Chart.min.js"></script>
+  <!-- Sparkline -->
+  <script src="plugins/sparklines/sparkline.js"></script>
+  <!-- JQVMap -->
+  <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+  <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+  <!-- jQuery Knob Chart -->
+  <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+  <!-- daterangepicker -->
+  <script src="plugins/moment/moment.min.js"></script>
+  <script src="plugins/daterangepicker/daterangepicker.js"></script>
+  <!-- Tempusdominus Bootstrap 4 -->
+  <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+  <!-- Summernote -->
+  <!-- <script src="plugins/summernote/summernote-bs4.min.js"></script> -->
+  <!-- overlayScrollbars -->
+  <!-- <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script> -->
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <!-- <script src="dist/js/demo.js"></script> -->
+  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+  <script src="dist/js/pages/dashboard.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="%PUBLIC_URL%/cal/dist/jquery.simple-calendar.js"></script>
+
+  <script src="dist/js/login.js"></script>
+
+
+  <!-- FLOT CHARTS -->
+  <script src="../../plugins/flot/jquery.flot.js"></script>
+  <!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
+  <script src="../../plugins/flot/plugins/jquery.flot.resize.js"></script>
+  <!-- FLOT PIE PLUGIN - also used to draw donut charts -->
+  <script src="../../plugins/flot/plugins/jquery.flot.pie.js"></script>
+
+  <!-- ad more options -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <!-- Admin Login -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+  <!-- <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> -->
+
+  <!-- Admin Login press enter -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+
+  <!-- pie chart -->
+
+
+
+
+
+  <!-- Nav tabs -->
+
+  <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+  <!-- modal -->
+
+  <!-- Alphabet navigation -->
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
+
+  <!-- page refresh -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+
+  <!-- Line chart -->
+
+  <!-- <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
+
+  <!-- <script>
+    window.onload = function () {
+
+      var chart = new CanvasJS.Chart("chartContainer", {
+        animationEnabled: true,
+        // theme: "dark2",
+        backgroundColor: "#F2F2F2",
+        border: "1px solid red",
+        textAlign: "center",
+        title: {
+          // text: "Simple Line Chart"
+        },
+        data: [{
+          type: "line",
+          indexLabelFontSize: 16,
+          dataPoints: [
+            { y: 450 },
+            { y: 414 },
+            { y: 520, indexLabel: "\u2191 highest", markerColor: "red", markerType: "triangle" },
+            { y: 460 },
+            { y: 450 },
+            { y: 500 },
+            { y: 480 },
+            { y: 480 },
+            { y: 410, indexLabel: "\u2193 lowest", markerColor: "DarkSlateGrey", markerType: "cross" },
+            { y: 500 },
+            { y: 480 },
+            { y: 510 }
+          ]
+        }]
+      });
+      chart.render();
+
+
+
+    }
+  </script> -->
+
+
+
+
+
+  <!-- Donut chart -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+
+  <!-- <script>
+Chart.pluginService.register({
+    beforeDraw: function (chart) {
+        var width = chart.chart.width,
+            height = chart.chart.height,
+            ctx = chart.chart.ctx;
+        ctx.restore();
+        var fontSize = (height / 114).toFixed(2);
+        ctx.font = fontSize + "em sans-serif";
+        ctx.textBaseline = "middle";
+        var text = chart.config.options.elements.center.text,
+            textX = Math.round((width - ctx.measureText(text).width) / 2),
+            textY = height / 2;
+        ctx.fillText(text, textX, textY);
+        ctx.save();
+    }
+});
+
+var chartData = [{"visitor": 39, "visit": 1}, {"visitor": 18, "visit": 2}, {"visitor": 9, "visit": 3}, {"visitor": 5, "visit": 4}, {"visitor": 6, "visit": 5}, {"visitor": 5, "visit": 6}, {"visitor": 98, "visit": 6}]
+
+var visitorData = [],
+    sum = 0,
+    visitData = [];
+
+for (var i = 0; i < chartData.length; i++) {
+    visitorData.push(chartData[i]['visitor'])
+    visitData.push(chartData[i]['visit'])
+  
+    sum += chartData[i]['visitor'];
+}
+
+var textInside = sum.toString();
+
+var myChart = new Chart(document.getElementById('mychart'), {
+    type: 'doughnut',
+    animation:{
+        animateScale:true
+    },
+    data: {
+        labels: visitData,
+        datasets: [{
+            label: 'Visitor',
+            data: visitorData,
+            backgroundColor: [
+                "#a2d6c4",
+                "#36A2EB",
+                "#3e8787",
+                "#579aac",
+                "#7dcfe8",
+                "#b3dfe7",
+                "#CDDC39"
+            ]
+        }]
+    },
+    options: {
+        elements: {
+          center: {
+            text: textInside
+          }
+        },
+        responsive: true,
+        legend: false,
+        legendCallback: function(chart) {
+            var legendHtml = [];
+            legendHtml.push('<ul>');
+            var item = chart.data.datasets[0];
+            for (var i=0; i < item.data.length; i++) {
+                legendHtml.push('<li>');
+                legendHtml.push('<span class="chart-legend" style="background-color:' + item.backgroundColor[i] +'"></span>');
+                legendHtml.push('<span class="chart-legend-label-text">' + item.data[i] + ' person - '+chart.data.labels[i]+' times</span>');
+                legendHtml.push('</li>');
+            }
+
+            legendHtml.push('</ul>');
+            return legendHtml.join("");
+        },
+        tooltips: {
+             enabled: true,
+             mode: 'label',
+             callbacks: {
+                label: function(tooltipItem, data) {
+                    var indice = tooltipItem.index;
+                    return data.datasets[0].data[indice] + " person visited " + data.labels[indice] + ' times';
+                }
+             }
+         },
+    }
+});
+
+$('#my-legend-con').html(myChart.generateLegend());
+
+console.log(document.getElementById('my-legend-con'));
+
+
+
+</script> -->
+
+  <!-- progress status -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+  <!-- <script src="https://code.highcharts.com/stock/highstock.js"></script> -->
+
+  <!-- activity log -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+
+
+
+
+  <!-- dropdown -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script>
+    $('nav > ul > li > a').on('click', function (e) {
+      e.stopPropagation();
+      $('nav ul ul').slideUp();
+      $(this).next().is(":visible") || $(this).next().slideDown();
+    });
+
+    $('li').has('ul').find('a').not('ul ul a').addClass('caret');
+  </script>
+
+  <!-- calender -->
+  <script>
+    var currentMonth = new Date().getMonth();
+    var currentYear = new Date().getFullYear();
+    var clickedDays = 0;
+    var bookingSteps = 0;
+    var lastClickedDay;
+    var startDate = "";
+    var endDate = "";
+    var monthNames = ["January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
+    var monthShortNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var dayNames = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"];
+    var bookedDates = [];
+    var selectedDates = [];
+
+
+    Date.prototype.addDays = function (days) {
+      var dat = new Date(this.valueOf())
+      dat.setDate(dat.getDate() + days);
+      return dat;
+    }
+    function formatDates(dates) {
+      if (dates != null) {
+        var newDateArray = [];
+        for (var i = 0; i < dates.length; i++) {
+          var date = "";
+          date += dayNames[dates[i].getDay()] + "-";
+          date += dates[i].getDate() + "-";
+          date += monthNames[dates[i].getMonth()] + "-";
+          date += dates[i].getFullYear();
+          newDateArray.push(date);
+        }
+        return newDateArray;
+      }
+      return null;
+    }
+    function getDates(startDate, stopDate) {
+      if (startDate != "" && endDate != "") {
+        var dateArray = new Array();
+        var currentDate = startDate;
+        while (currentDate <= stopDate) {
+          dateArray.push(new Date(currentDate))
+          currentDate = currentDate.addDays(1);
+        }
+        return dateArray;
+      }
+      return null;
+    }
+    function validateForm() {
+      var formValidated = true;
+
+      if ($("#form-name").val() == "" || $("#form-name").val() == null) {
+        $("#form-name").addClass("formError");
+        formValidated = false;
+      }
+      else {
+        $("#form-name").removeClass("formError");
+      }
+
+      if ($("#form-number").val() == "" || $("#form-number").val() == null) {
+        $("#form-number").addClass("formError");
+        formValidated = false;
+      }
+      else {
+        $("#form-number").removeClass("formError");
+      }
+
+      if ($("#form-email").val() == "" || $("#form-email").val() == null) {
+        $("#form-email").addClass("formError");
+        formValidated = false;
+      }
+      else {
+        $("#form-email").removeClass("formError");
+      }
+
+      if ($("#form-guests").val() == "" || $("#form-guests").val() == null) {
+        $("#form-guests").addClass("formError");
+        formValidated = false;
+      }
+      else {
+        $("#form-guests").removeClass("formError");
+      }
+
+      return formValidated;
+    }
+
+    function clearCalender() {
+      clickedDays = 0;
+      $(".month div").removeClass("clicked");
+      $("#startdate").html("");
+      $("#enddate").html("");
+
+      startDate = "";
+      endDate = "";
+      selectedDates = [];
+      bookingSteps = 0;
+    }
+    function clearBooking() {
+      $("#booking-form input").val("");
+      $("#booking-form textarea").val("");
+
+      $("#booking-wrapper").removeClass("opened");
+      $("#make-booking").html("MAKE BOOKING ENQUIRY");
+
+
+    }
+
+    function daysInMonth(month) {
+      return new Date(currentYear, month, 0).getDate();
+    }
+    function displayCalender() {
+      var days = daysInMonth(currentMonth + 1);
+
+      $("#calender-title p").html(monthNames[currentMonth].toUpperCase());
+      $("#calender-content").html("");
+
+      for (var i = 1; i < firstDayOffset(new Date()); i++) {
+        $("#calender-content").append("<div class='month flex center-vh'></div>");
+      }
+      for (var i = 1; i <= days; i++) {
+        var day = new Date(currentYear, currentMonth, i).getDay();
+        var string = "<div class='month'><div id='" + dayNames[day] + "-" + i + "-" + monthNames[currentMonth] + "-" + currentYear + "'class='month-selector flex center-vh clickable' onclick='monthClick(this)'><p>" + i + "</p></div></div>";
+        $("#calender-content").append(string);
+      }
+
+      checkSelected();
+      checkBookings();
+    }
+    function monthClick(e) {
+      if ($(e).hasClass("clickable")) {
+        clickedDays += 1;
+
+        if (clickedDays == 1) {
+          $(e).toggleClass("clicked");
+          startDateIndex = parseInt($(e).attr('id').split('-')[1]);
+          startDate = new Date(currentYear, currentMonth, startDateIndex);
+        }
+        if (clickedDays > 1) {
+          endDateIndex = parseInt($(e).attr('id').split('-')[1]);
+          endDate = new Date(currentYear, currentMonth, endDateIndex);
+        }
+        if (endDate > startDate) {
+          var clicked = $(".clicked");
+          $(clicked).not(clicked[0]).removeClass("clicked");
+          $(e).toggleClass("clicked");
+
+          dateArray = getDates(startDate, endDate);
+          dateArray = formatDates(dateArray)
+          selectedDates = dateArray;
+
+          for (var i = 0; i < dateArray.length; i++) {
+            $("#" + dateArray[i]).addClass("clicked");
+          }
+        }
+        $("#startdate").html(startDate.toString().split(' ').slice(0, 4).join(' '));
+        $("#enddate").html(endDate.toString().split(' ').slice(0, 4).join(' '));
+      }
+    }
+    function firstDayOffset(date) {
+      return new Date(currentYear, currentMonth, 1).getDay();
+    }
+
+    function checkBookings() {
+      if (bookedDates != null) {
+        for (var i = 0; i < bookedDates.length; i++) {
+          var inner = bookedDates[i];
+          for (var j = 0; j < inner.length; j++) {
+            $("#" + inner[j]).removeClass("clickable").delay(400).addClass("booked");
+          }
+        }
+      }
+    }
+    function checkSelected() {
+      selectedDates = getDates(startDate, endDate);
+      selectedDates = formatDates(selectedDates);
+
+      if (selectedDates != null) {
+        for (var i = 0; i < selectedDates.length; i++) {
+          $("#" + selectedDates[i]).addClass("clicked");
+        }
+      }
+    }
+    function addBooking() {
+      bookedDates.push(dateArray);
+      clearCalender();
+      displayCalender();
+    }
+
+    $(function () {
+      displayCalender(currentMonth)
+      $("#date").append(new Date);
+    });
+
+    $("#left").on("click", function () {
+      if (currentMonth > 0)
+        currentMonth -= 1;
+      else {
+        currentMonth = 11;
+        currentYear -= 1;
+      }
+      displayCalender();
+    });
+    $("#right").on("click", function () {
+      if (currentMonth < 11)
+        currentMonth += 1;
+      else {
+        currentMonth = 0;
+        currentYear += 1;
+      }
+      displayCalender();
+    });
+    $("#clear").on("click", function () {
+      clearCalender();
+      clearBooking();
+    });
+    $("#make-booking").on("click", function () {
+      if (selectedDates != null && selectedDates.length > 0) {
+        bookingSteps += 1;
+
+        if (bookingSteps == 1) {
+          $("#booking-wrapper").addClass("opened");
+          $("#make-booking").html("SUBMIT ENQUIRY");
+        }
+        if (bookingSteps == 2) {
+          if (validateForm()) {
+            clearBooking();
+            addBooking();
+          }
+          else {
+            bookingSteps = 1;
+          }
+        }
+      }
+    });
+
+  </script>
+  <!-- end calender -->
+
+  <script>
+
+    $(document).ready(function () {
+      $(".buttonContainer").click(function () {
+        $(".addNewsCatagory").toggle(2000);
+
+      });
+    });
+  </script>
+  <script>
+
+    $(document).ready(function () {
+      $(".create_btn").click(function () {
+        $(".addNewsCatagory").hide(2000);
+
+      });
+    });
+  </script>
+
+  <!-- google map -->
+  <script type="text/javascript">
+
+  </script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3EALXpgatIDwLaYpuT5ek7XDVBZNYGnc&callback=initMap"
+    async defer></script> -->
+
+  <!-- tab menu -->
+  <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+  <script src="https://www.jqueryscript.net/demo/Adaptive-Horizontal-Tab-Menu/src/jquery.horizontalmenu.js?v2"></script>
+  <!-- <script>
+    $(function () {
+      $('.ah-tab-wrapper').horizontalmenu({
+        itemClick: function (item) {
+          $('.ah-tab-content-jump-tab-wrapper .ah-tab-content-jump-tab').removeAttr('data-ah-tab-active');
+          $('.ah-tab-content-jump-tab-wrapper .ah-tab-content-jump-tab:eq(' + $(item).index() + ')').attr('data-ah-tab-active', 'true');
+          return false; //if this finction return true then will be executed http request
+        }
+      });
+    });
+  </script> -->
+
+
+
+  <!-- dependent dropdown -->
+  <script>
+    $(document).ready(function () {
+
+      load_json_data('country');
+
+      function load_json_data(id, parent_id) {
+        var html_code = '';
+        $.getJSON('https://raw.githubusercontent.com/ahammoudi/jason_data/master/data.jason', function (data) {
+
+          html_code += '<option value="">Select Department</option>';
+          $.each(data, function (key, value) {
+            if (id == 'country') {
+              if (value.parent_id == '0') {
+                html_code += '<option value="' + value.id + '">' + value.name + '</option>';
+              }
+            }
+            else {
+              if (value.parent_id == parent_id) {
+                html_code += '<option value="' + value.id + '">' + value.name + '</option>';
+              }
+            }
+          });
+          $('#' + id).html(html_code);
+        });
+
+      }
+
+      $(document).on('change', '#country', function () {
+        var country_id = $(this).val();
+        if (country_id != '') {
+          load_json_data('state', country_id);
+        }
+        else {
+          $('#state').html('<option value="">Select state</option>');
+          $('#city').html('<option value="">Select city</option>');
+          $('#house').html('<option value="">Select house</option>');
+        }
+      });
+      $(document).on('change', '#state', function () {
+        var state_id = $(this).val();
+        if (state_id != '') {
+          load_json_data('city', state_id);
+        }
+        else {
+          $('#city').html('<option value="">Select city</option>');
+        }
+      });
+
+      $(document).on('change', '#country', function () {
+        var country_id = $(this).val();
+        if (country_id == 1) {
+          load_json_data('house', 7);
+        }
+        else if (country_id == 2) {
+          load_json_data('house', 8);
+        }
+        else {
+          $('#house').html('<option value="">Select house</option>');
+        }
+      });
+    });
+  </script>
+  <!-- input emoji -->
+  <script>      $(function () {
+      window.emojiPicker = new EmojiPicker({
+        emojiable_selector: '[data-emojiable=true]',
+        // assetsPath: 'http://onesignal.github.io/emoji-picker/lib/img/',
+        popupButtonClasses: 'fa fa-smile-o'
+      });
+
+      window.emojiPicker.discover();
+    });</script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <!-- <script src="https://onesignal.github.io/emoji-picker/lib/js/config.js"></script>
+  <script src="https://onesignal.github.io/emoji-picker/lib/js/util.js"></script>
+  <script src="https://onesignal.github.io/emoji-picker/lib/js/jquery.emojiarea.js"></script>
+  <script src="https://onesignal.github.io/emoji-picker/lib/js/emoji-picker.js"></script> -->
+
+  <!-- news content based on dropdown -->
+  <script>
+    $(document).ready(function () {
+      $('.group').hide();
+      $('#option1').show();
+      $('#selectMe').change(function () {
+        $('.group').hide();
+        $('#' + $(this).val()).show();
+      })
+    });
+  </script>
+
+  <script>
+    function ExportToExcel(type, fn, dl) {
+      var elt = document.getElementById('tbl_exporttable_to_xls');
+      var wb = XLSX.utils.table_to_book(elt, { sheet: "sheet1" });
+      return dl ?
+        XLSX.write(wb, { bookType: type, bookSST: true, type: 'base64' }) :
+        XLSX.writeFile(wb, fn || ('MySheetName.' + (type || 'xlsx')));
+    }
+  </script>
+
+  <!-- faq categories -->
+  <script>
+    $(function () {
+      $("#tabs").tabs().addClass("ui-tabs-vertical ui-helper-clearfix");
+      $("#tabs li").removeClass("ui-corner-top").addClass("ui-corner-left");
+    });
+  </script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+  <!-- press enter & login -->
+  <script>
+    function myFunction(e) {
+      if (e.which == '13' || e.type == 'click') {
+
+        const campusId = document.getElementById("campusId").value;
+        const password = document.getElementById("password").value;
+        if (campusId == "12345" && password == "admin@123") {
+          $(".myAlert-bottom").show();
+
+          setTimeout(function () {
+            window.location.href = "/homepage";
+
+          }, 2000);
+
+        } else {
+          $(".failed-bottom").show();
+          setTimeout(function () {
+            $(".failed-bottom").hide();
+          }, 2000);
+        }
+      }
+    }
+    $(document)
+      .on('click', '#go', myFunction)
+      .on('keypress', this, myFunction);
+  </script>
+  <!-- Admin Login -->
+  <!-- <script>
+    const toggleForm = () => {
+      const container = document.querySelector('.container');
+      container.classList.toggle('active');
+    };
+  </script> -->
+
+  <!-- student tabs -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+
+  <!-- donut chart -->
+  <!-- <script>
+  var dataset = [
+        { name: 'IE', percent: 39.10 },
+        { name: 'Chrome', percent: 32.51 },
+        { name: 'Safari', percent: 13.68 },
+        { name: 'Firefox', percent: 8.71 },
+        { name: 'Others', percent: 6.01 }
+    ];
+
+    var pie=d3.layout.pie()
+            .value(function(d){return d.percent})
+            .sort(null)
+            .padAngle(.03);
+
+    var w=300,h=300;
+
+    var outerRadius=w/2;
+    var innerRadius=100;
+
+    var color = d3.scale.category10();
+
+    var arc=d3.svg.arc()
+            .outerRadius(outerRadius)
+            .innerRadius(innerRadius);
+
+    var svg=d3.select("#chart")
+            .append("svg")
+            .attr({
+                width:w,
+                height:h,
+                class:'shadow'
+            }).append('g')
+            .attr({
+                transform:'translate('+w/2+','+h/2+')'
+            });
+
+    var path=svg.selectAll('path')
+            .data(pie(dataset))
+            .enter()
+            .append('path')
+            .attr({
+                d:arc,
+                fill:function(d,i){
+                    return color(d.data.name);
+                }
+            });
+</script> -->
+  <!-- get current date -->
+  <!-- <script>
+    var date = new Date();
+    var currentDate = date.toISOString().slice(0, 10);
+    var currentTime = date.getHours() + ':' + date.getMinutes();
+
+    document.getElementById('currentDate').value = currentDate;
+    document.getElementById('currentTime').value = currentTime;
+  </script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- add event calender -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+   -->
+  <!-- <script>
+     var events = []
+events=parselocalstorage('events')
+var renderPopup = function (jsEvent, start, end, calEvent) {
+  var $popup = $('#calendar-popup');
+  var $eventForm = $('#event-form');
+  $event = $('#event');
+  var $selectedElmt = $(jsEvent.target);
+
+  var relativeStartDay = start.calendar(null, { lastDay: '[yesterday]', sameDay: '[today]'});
+  var endNextDay = '';
+
+  if(relativeStartDay === 'yesterday') {
+    endNextDay = '[Today at] ';
+  }
+  else if(relativeStartDay === 'today') {
+    endNextDay = '[Tomorrow at] ';
+  }
+  else {
+    endNextDay = 'dddd ';
+  }
+
+
+  $('.start-time').html(
+    ' <p class="calender_date_time">' + (start.isSameOrBefore(moment()) ? 'Started' : 'Starts') + '</p>'
+      + '<time class="view_event_calendar" datetime="' + start.format() + '">'
+      + start.calendar(null, {
+        lastWeek: 'L LT',
+        nextWeek: 'dddd LT',
+        sameElse: 'L LT'
+      })
+      + '</time>'
+  );
+  $('.end-time').html(
+    '<p class="calender_date_time"> '
+      + (end.isSameOrBefore(moment()) ? 'Ended' : 'Ends')
+      + (end.isSame(start, 'day') ? ' at' : '')
+      + '</p>'
+      + '<time class="view_event_calendar" datetime="' + end.format() + '">'
+      + end.calendar(start, {
+        sameDay: 'LT',
+        nextDay: endNextDay + 'LT',
+        nextWeek: 'dddd LT',
+        sameElse: 'L LT'
+      })
+      + '</time>'
+  );
+
+  if(calEvent) {
+   $eventForm.hide();
+
+    $event.children('header').html(``+calEvent.title);
+    $event.find('.location').text(calEvent.location ? calEvent.location : '(No location information.)');
+    $event.find('.details').text(calEvent.details ? calEvent.details : '');
+
+    $event.show();
+  }
+  else {
+    $event.hide();
+    $('#event-start').val(start.format('YYYY-MM-DD[T]HH:mm'));
+    $('#event-end').val(end.format('YYYY-MM-DD[T]HH:mm'));
+    $eventForm.show();
+  }
+
+  var leftPosition = 0;
+  var $prong = $('.prong');
+  var prongPos = 0;
+
+  if($selectedElmt.hasClass('fc-highlight')) {
+    leftPosition = $selectedElmt.offset().left - $popup.width() + ($selectedElmt.width() / 2);
+    if(leftPosition <= 0) {
+      leftPosition = 5;
+      prongPos = $popup.width() - $selectedElmt.offset().left - 30
+    }
+    else {
+      prongPos = 15;
+    }
+
+    $popup.css('left', leftPosition);
+    $prong.css({
+      'left': '',
+      'right': prongPos,
+      'float': 'right'
+    });
+  }
+  else {
+    leftPosition = jsEvent.originalEvent.pageX - $popup.width()/2;
+    if(leftPosition <= 0) {
+      leftPosition = 5;
+    }
+    prongPos = jsEvent.originalEvent.pageX - leftPosition - ($prong.width() * 1.7);
+
+    $popup.css('left', leftPosition);
+    $prong.css({
+      'left': prongPos,
+      'float': 'none',
+      'right': ''
+    });
+  }
+
+  var topPosition = (calEvent ? jsEvent.originalEvent.pageY : $selectedElmt.offset().top) - $popup.height() - 15;
+
+  if((topPosition <= window.pageYOffset)
+    && !((topPosition + $popup.height()) > window.innerHeight)) {
+      $popup.css('top', jsEvent.originalEvent.pageY + 15);
+      $prong.css('top', -($popup.height() + 12))
+        .children('div:first-child').removeClass('bottom-prong-dk').addClass('top-prong-dk')
+        .next().removeClass('bottom-prong-lt').addClass('top-prong-lt');
+  }
+  else {
+    $popup.css('top', topPosition);
+    $prong.css({'top': 0, 'bottom': 0})
+      .children('div:first-child').removeClass('top-prong-dk').addClass('bottom-prong-dk')
+      .next().removeClass('top-prong-lt').addClass('bottom-prong-lt');
+  }
+
+  $popup.show();
+  $popup.find('input[type="text"]:first').focus();
+}
+
+    
+
+$(document).ready(function() {
+
+   
+  $('#calendar').fullCalendar({
+    dayRender: function (date, cell) {
+
+if ( !dateHasEvent(date) )
+    cell.css("background-color", "red");
+else if ( dateHasEvent(date) )
+    cell.css("background-color", "yellow");
+},
+    header: {
+    left: 'title',
+      right: ''
+    },
+    timezone: 'local',
+   
+    defaultView: 'month',
+    allDayDefault: false,
+    defaultDate: new Date(),
+    allDaySlot: false,
+    slotEventOverlap: true,
+    slotDuration: '00:30:00',
+    slotLabelInterval: "01:00:00",
+    snapDuration: "00:15:00",
+    fixedWeekCount: false,
+    contentHeight: "auto",
+    scrollTime :  "8:00:00",
+    selectHelper: true,
+    axisFormat: 'h:mm a',
+    timeFormat: '',
+    displayEventTime : false,
+    editable: true,
+    selectable: true,
+  
+    events: function(start, end, timezone, callback) {
+			let arr = parselocalstorage('events')  
+      callback(arr);
+    },
+    eventColor: '#1F3977',
+    
+    eventClick: function (calEvent, jsEvent) {
+      
+      renderPopup(jsEvent, calEvent.start, calEvent.end, calEvent);
+
+      
+    },
+    eventRender: function(event, element) {
+      
+      if (event.LeadId != null) {
+        element.css('color', 'blue');
+        element.css('background-color', 'yellow');
+        element.text(element.text);
+    }
+            element.append( `<span class='I_delete'><i class="fa fa-remove fa-xs"></i></span>` );
+            element.append( `<span class='I_edit'><i class="fa fa-edit fa-xs"></i></span>` );
+            element.find(".I_delete").click(function() {
+            $('#calendar-popup').hide();
+            // if(confirm('are you sure want to delete event?')) 
+            {
+             $('#calendar').fullCalendar('removeEvents',event._id);
+            var index=events.map(function(x){ return x.id; }).indexOf(event.id);
+            events.splice(index,1);
+            localStorage.setItem('events', JSON.stringify(events));
+           
+            events=parselocalstorage('events')   
+
+       }
+            });
+        element.find(".I_edit").click(function() {
+            $('#calendar-popup').hide();
+
+          $('#eventname').val(event.title)
+          $('#location').val(event.location)
+          $('#eventdetails').val(event.details)
+          $('input#eventstart').val(event.start._i)
+           $('input#eventend').val(event.end._i)
+          $('#simplemodal').show();
+         
+          
+          //update events
+          var that=event;
+           $('#edit-form').on('submit', function(e) {
+           e.preventDefault();
+           $form = $(e.currentTarget);
+
+         $title = $form.find('input#eventname');
+         $location = $form.find('input#location');
+         $details = $form.find('textarea#eventdetails');
+             $start= $form.find('input#eventstart');
+             $end= $form.find('input#eventend');
+            //update value
+             that.title=$title.val();
+              that.location=$location.val();
+             that.details=$details.val();
+                that.start=$start.val();               
+               that.end=$end.val();
+            
+            $('#calendar').fullCalendar('updateEvent', that);
+             console.log('after update',events)
+              $('#simplemodal').hide();
+              $('#calendar-popup').hide();
+           });
+           $('#calendar').fullCalendar('updateEvent', event);
+         
+         // 
+           // 		localStorage.setItem('events', JSON.stringify(events));
+            });
+      
+      $('#close-btnid').click(function(){
+                  $('#simplemodal').hide();
+      })
+    
+      var modal=document.getElementById('simplemodal')
+
+     window.addEventListener('click',clickOutside)
+      function clickOutside(e){
+      if(e.target==modal){
+        modal.style.display='none';
+
+        }
+        }
+        }
+    ,
+    select: function(start, end, jsEvent) {
+        $('.btn-primary').css('opacity',1)
+          $('.btn-primary').click(function(){
+        renderPopup(jsEvent, start.local(), end.local());
+      }) 
+      renderPopup(jsEvent, start.local(), end.local());
+    
+    }
+  });
+
+  $('#event-form').on('submit', function(e) {
+    e.preventDefault();
+
+    $form = $(e.currentTarget);
+
+    $title = $form.find('input#event-title');
+    $location = $form.find('input#event-location');
+    $details = $form.find('textarea#event-details');
+ $ID = '_' + Math.random().toString(36).substr(2, 9)
+    events.push({
+      id:$ID,
+      title: $title.val(),
+      start: $form.find('input#event-start').val(),
+      end: $form.find('input#event-end').val(),
+      location: $location.val(),
+      details: $details.val()
+    });
+
+    $title.val('');
+    $location.val('');
+    $details.val('');
+
+    $form.parent().blur().hide();
+   localStorage.setItem('events', JSON.stringify(events));
+    $('#calendar').fullCalendar('refetchEvents');
+
+  });
+
+  
+
+  //Set hide action for ESC key event
+  $('#calendar-popup').on('keydown', function(e) {
+    $this = $(this);
+    console.log($this);
+    if($this.is(':visible') && e.which === 27) {
+      $this.blur();
+    }
+  })
+  //Set hide action for lost focus event
+  .on('focusout', function(e) {
+    $this = $(this);
+    if($this.is(':visible') && !$(e.relatedTarget).is('#calendar-popup, #calendar-popup *')) {
+      $this.hide();
+    }
+  });
+});
+
+/*** TESTING/DEMO ***/
+var date = new Date();
+var today = date.getDate();
+var month = date.getMonth() + 1;
+var year = date.getFullYear();
+today = today < 10 ? '0' + today.toString() : today;
+var tomorrow = today + 1 < 10 ? '0' + (today + 1).toString() : today + 1; //today not last day
+var yesterday = today - 1 < 10 ? '0' + (today - 1).toString() : today - 1; //today not first day
+      localStorage.clear()
+
+var str=	localStorage.getItem('events');
+      var obj=JSON.parse(str)||[]
+			let arr = Object.keys(obj).map((k) => obj[k])
+      console.log('what is in aarrr1',events)
+if(events.length===0){
+  events.push(
+  {id:1,title: 'event1', start: year + '-' + month + '-' + today + 'T07:00', end: year + '-' + month + '-' + today + 'T10:00', location: 'The Moon', details: 'There will be cheese'},
+  {id:2,title: 'event2', start: year + '-' + month + '-' + tomorrow + 'T03:00', end: year + '-' + month + '-' + tomorrow + 'T08:00', location: 'The Moon', details: 'There will be cheese'},
+  {id:3,title: 'event3', start: year + '-' + month + '-' + yesterday + 'T20:00', end: year + '-' + month + '-' + today + 'T05:00', location: 'The Moon', details: 'There will be cheese'}
+);
+}
+/*events.push(
+  {title: 'event1', start: year + '-' + month + '-' + today + 'T07:00', end: year + '-' + month + '-' + today + 'T10:00', location: 'The Moon', details: 'There will be cheese'},
+  {title: 'event2', start: year + '-' + month + '-' + tomorrow + 'T03:00', end: year + '-' + month + '-' + tomorrow + 'T08:00', location: 'The Moon', details: 'There will be cheese'},
+  {title: 'event3', start: year + '-' + month + '-' + yesterday + 'T20:00', end: year + '-' + month + '-' + today + 'T05:00', location: 'The Moon', details: 'There will be cheese'}
+);*/
+
+  		localStorage.setItem('events', JSON.stringify(events));
+
+/***************/
+
+
+
+
+
+//handle search
+
+    var alreadyFilled = false;
+    function initDialog() {
+        clearDialog();
+        for (var i = 0; i < events.length; i++) {
+    var mS1 = {"01":'Jan', "02":'Feb', "03":'Mar', "04":'Apr', "05":'May', "06":'June', "07":'July', "08":'Aug', "09":'Sept', "10":'Oct', "11":'Nov', "12":'Dec'};
+
+            $('.dialog').append('<div><span class="s_title">' + events[i].title +`</span><br><span class='s_des'>"` +events[i].details+
+                                  
+                                 `</span> <span class='duration'>`+events[i].start+`</span>`
+                                    
+                                + `</div>
+   <ul class="vertical-date">
+            <li class="list-daynumber">`+events[i].start.slice(8,10)+`</li>
+            <li class="list-monthname">`+mS1[events[i].start.slice(5,7)]+`</li>
+          </ul>
+
+`);
+
+        }
+    }
+    function clearDialog() {
+        $('.dialog').empty();
+    }
+    $('.autocomplete input').click(function() {
+        if (!alreadyFilled) {
+            $('.dialog').addClass('open');
+        }
+
+    });
+    $('body').on('click', '.dialog > div', function() {
+        $('.autocomplete input').val($(this).find('.s_title').text()).focus();
+        $('.autocomplete .close').addClass('visible');
+        alreadyFilled = true;
+    });
+    $('.autocomplete .close').click(function() {
+        alreadyFilled = false;
+        $('.dialog').addClass('open');
+        $('.autocomplete input').val('').focus();
+        $(this).removeClass('visible');
+    });
+
+    function match(str) {
+        str = str.toLowerCase();
+        clearDialog();
+        for (var i = 0; i < events.length; i++) {
+            if ((events[i].title).toLowerCase().startsWith(str)) {
+              
+    var mS2 = {"01":'Jan', "02":'Feb', "03":'Mar', "04":'Apr', "05":'May', "06":'June', "07":'July', "08":'Aug', "09":'Sept', "10":'Oct', "11":'Nov', "12":'Dec'};
+
+                $('.dialog').append('<div><span class="s_title">' + events[i].title+`</span><br><span class='s_des'>` +events[i].details
+                                    +
+                                 ` </span><span class='duration'>`+events[i].start+`</span>`
+                                    +
+                                    `</div>
+   <ul class="vertical-date">
+            <li class="list-daynumber">`+events[i].start.slice(8,10)+`</li>
+            <li class="list-monthname">`+mS2[events[i].start.slice(5,7)]+`</li>
+          </ul>
+`);
+        
+            }
+        }
+    }
+    $('.autocomplete input').on('input', function() {
+        $('.dialog').addClass('open');
+        alreadyFilled = false;
+        match($(this).val());
+    });
+    $('body').click(function(e) {
+        if (!$(e.target).is("input, .close")) {
+            $('.dialog').removeClass('open');
+        }
+    });
+    initDialog();
+
+
+    function parselocalstorage(name){
+      var str= localStorage.getItem(name);
+      var obj=JSON.parse(str)||[]
+      let arr = Object.keys(obj).map((k) => obj[k])||[]
+      return arr
+    }
+  </script> -->
+
+
+  <!-- script for calendar "Akshay" -->
+  <script>
+    var $calendar;
+    $(document).ready(function () {
+      let container = $("#main_cal").simpleCalendar({
+        fixedStartDay: 0, // begin weeks by sunday
+        disableEmptyDetails: true,
+        events: [
+          // generate new event after tomorrow for one hour
+          {
+            startDate: new Date(new Date().setHours(new Date().getHours() + 24)).toDateString(),
+            endDate: new Date(new Date().setHours(new Date().getHours() + 25)).toISOString(),
+            summary: 'Visit of the Eiffel Tower'
+          },
+          // generate new event for yesterday at noon
+          {
+            startDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 12, 0)).toISOString(),
+            endDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 11)).getTime(),
+            summary: 'Restaurant'
+          },
+          // generate new event for the last two days
+          {
+            startDate: new Date(new Date().setHours(new Date().getHours() - 48)).toISOString(),
+            endDate: new Date(new Date().setHours(new Date().getHours() - 24)).getTime(),
+            summary: 'Visit of the Louvre'
+          }
+        ],
+
+      });
+      $calendar = container.data('plugin_simpleCalendar')
+    });
+  </script>
+
+  <!-- <script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      plugins: [ 'interaction', 'dayGrid', 'timeGrid' ],
+      defaultView: 'dayGridMonth',
+      defaultDate: '2020-05-07',
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+      },
+      events: [
+        {
+          title: 'All Day Event',
+          start: '2020-05-01'
+        },
+        {
+          title: 'Long Event',
+          start: '2020-05-07',
+          end: '2020-05-10'
+        },
+        {
+          groupId: '999',
+          title: 'Repeating Event',
+          start: '2020-05-09T16:00:00'
+        },
+        {
+          groupId: '999',
+          title: 'Repeating Event',
+          start: '2020-05-16T16:00:00'
+        },
+        {
+          title: 'Conference',
+          start: '2020-05-11',
+          end: '2020-05-13'
+        },
+        {
+          title: 'Meeting',
+          start: '2020-05-12T10:30:00',
+          end: '2020-05-12T12:30:00'
+        },
+        {
+          title: 'Lunch',
+          start: '2020-05-12T12:00:00'
+        },
+        {
+          title: 'Meeting',
+          start: '2020-05-12T14:30:00'
+        },
+        {
+          title: 'Birthday Party',
+          start: '2020-05-13T07:00:00'
+        },
+        {
+          title: 'Click for Google',
+          url: 'http://google.com/',
+          start: '2020-05-28'
+        }
+      ]
+    });
+
+    calendar.render();
+  });
+
+</script>
+<script>
+   $(".btn").click(function(){
+            $("#event_modal").modal('hide');
+        });
+</script> -->
+
+  <!-- add options to poll questions -->
+  <script>
+    $(document).ready(function () {
+      var max_fields = 10; //maximum input boxes allowed
+      var wrapper = $(".input_fields_wrap"); //Fields wrapper
+      var add_button = $(".add_field_button"); //Add button ID
+
+      var x = 1; //initlal text box count
+      $(add_button).click(function (e) { //on add input button click
+        e.preventDefault();
+        if (x < max_fields) { //max input box allowed
+          x++; //text box increment
+          $(wrapper).append('<div class="d-flex" width="100%"><input type="name" class="addOptions" name="mytext[]" placeholder="Enter Option" /><a href="#" class="remove_field"><i class="fas fa-times-circle fa-sm"></i></a></div>'); //add input box
+        }
+      });
+
+      $(wrapper).on("click", ".remove_field", function (e) { //user click on remove text
+        e.preventDefault(); $(this).parent('div').remove(); x--;
+      })
+    });
+  </script>
+
+  <!-- faq -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script> -->
+  <script>
+    $('div[data-readmore]').hide().each(function () {
+      var open_text = $(this).data('open-text');
+      open_text = typeof open_text !== 'undefined' ? open_text : 'Read More';
+      $(this).before('<a data-readmore-toggle href="#">' + open_text + '</a>');
+    });
+
+    $('[data-readmore-toggle]').click(function (e) {
+      e.preventDefault();
+
+      var open_text = $(this).siblings('div[data-readmore]').data('open-text');
+      var close_text = $(this).siblings('div[data-readmore]').data('close-text');
+
+      if (typeof open_text == 'undefined') { open_text = "Read More" }
+      if (typeof close_text == 'undefined') { close_text = "Read Less" }
+
+      if ($(this).text() == open_text) {
+        $(this).html(close_text).next('div[data-readmore]').show().after(this);
+      } else {
+        $(this).html(open_text).prev('div[data-readmore]').hide().before(this);
+      }
+    });
+  </script>
+
+
+  <!-- multiple dropdown-->
+  <!-- <script>
+    var dropdownn = {
+      get: function (selector) {
+        var ele = document.querySelectorAll(selector);
+        for (var i = 0; i < ele.length; i++) {
+          this.init(ele[i]);
+        }
+        return ele;
+      },
+      template: function (html) {
+        var template = document.createElement('div');
+        template.innerHTML = html.trim();
+        return this.init(template.childNodes[0]);
+      },
+      init: function (ele) {
+        ele.on = function (event, func) { this.addEventListener(event, func); }
+        return ele;
+      }
+    };
+
+    //Build the plugin
+    var drop = function (info) {
+      var o = {
+        options: info.options,
+        selected: info.selected || [],
+        preselected: info.preselected || [],
+        open: false,
+        html: {
+          select: $.get(info.selector)[0],
+          options: $.get(info.selector + ' option'),
+          parent: undefined,
+        },
+        init: function () {
+          //Setup Drop HTML
+          this.html.parent = $.get(info.selector)[0].parentNode
+          this.html.drop = $.template('<div class="drop"></div>')
+          this.html.dropDisplay = $.template('<div class="drop-display">Display</div>')
+          this.html.dropOptions = $.template('<div class="drop-options">Options</div>')
+          this.html.dropScreen = $.template('<div class="drop-screen"></div>')
+
+          this.html.parent.insertBefore(this.html.drop, this.html.select)
+          this.html.drop.appendChild(this.html.dropDisplay)
+          this.html.drop.appendChild(this.html.dropOptions)
+          this.html.drop.appendChild(this.html.dropScreen)
+          //Hide old select
+          this.html.drop.appendChild(this.html.select);
+
+          //Core Events
+          var that = this;
+          this.html.dropDisplay.on('click', function () { that.toggle() });
+          this.html.dropScreen.on('click', function () { that.toggle() });
+          //Run Render
+          this.load()
+          this.preselect()
+          this.render();
+        },
+        // toggle: function () {
+        //   this.html.drop.classList.toggle('open');
+        // },
+        addOption: function (e, element) {
+          var index = Number(element.dataset.index);
+          this.clearStates()
+          this.selected.push({
+            index: Number(index),
+            state: 'add',
+            removed: false
+          })
+          this.options[index].state = 'remove';
+          this.render()
+        },
+        removeOption: function (e, element) {
+          e.stopPropagation();
+          this.clearStates()
+          var index = Number(element.dataset.index);
+          this.selected.forEach(function (select) {
+            if (select.index == index && !select.removed) {
+              select.removed = true
+              select.state = 'remove'
+            }
+          })
+          this.options[index].state = 'add'
+          this.render();
+        },
+        load: function () {
+          this.options = [];
+          for (var i = 0; i < this.html.options.length; i++) {
+            var option = this.html.options[i]
+            this.options[i] = {
+              html: option.innerHTML,
+              value: option.value,
+              selected: option.selected,
+              state: ''
+            }
+          }
+        },
+        preselect: function () {
+          var that = this;
+          this.selected = [];
+          this.preselected.forEach(function (pre) {
+            that.selected.push({
+              index: pre,
+              state: 'add',
+              removed: false
+            })
+            that.options[pre].state = 'remove';
+          })
+        },
+        render: function () {
+          this.renderDrop()
+          this.renderOptions()
+        },
+        renderDrop: function () {
+          var that = this;
+          var parentHTML = $.template('<div></div>')
+          this.selected.forEach(function (select, index) {
+            var option = that.options[select.index];
+            var childHTML = $.template('<span class="item ' + select.state + '">' + option.html + '</span>')
+            var childCloseHTML = $.template(
+              '<i class="material-icons btnclose" data-index="' + select.index + '">&#xe5c9;</i></span>')
+            childCloseHTML.on('click', function (e) { that.removeOption(e, this) })
+            childHTML.appendChild(childCloseHTML)
+            parentHTML.appendChild(childHTML)
+          })
+          this.html.dropDisplay.innerHTML = '';
+          this.html.dropDisplay.appendChild(parentHTML)
+        },
+        renderOptions: function () {
+          var that = this;
+          var parentHTML = $.template('<div></div>')
+          this.options.forEach(function (option, index) {
+            var childHTML = $.template(
+              '<a data-index="' + index + '" class="' + option.state + '">' + option.html + '</a>')
+            childHTML.on('click', function (e) { that.addOption(e, this) })
+            parentHTML.appendChild(childHTML)
+          })
+          this.html.dropOptions.innerHTML = '';
+          this.html.dropOptions.appendChild(parentHTML)
+        },
+        clearStates: function () {
+          var that = this;
+          this.selected.forEach(function (select, index) {
+            select.state = that.changeState(select.state)
+          })
+          this.options.forEach(function (option) {
+            option.state = that.changeState(option.state)
+          })
+        },
+        changeState: function (state) {
+          switch (state) {
+            case 'remove':
+              return 'hide'
+            case 'hide':
+              return 'hide'
+            default:
+              return ''
+          }
+        },
+        isSelected: function (index) {
+          var check = false
+          this.selected.forEach(function (select) {
+            if (select.index == index && select.removed == false) check = true
+          })
+          return check
+        }
+      }; o.init(); return o;
+    }
+
+
+    //Set up some data
+    var options = [
+      { html: 'cats', value: 'cats' },
+      { html: 'fish', value: 'fish' },
+      { html: 'squids', value: 'squids' },
+      { html: 'cats', value: 'whales' },
+      { html: 'cats', value: 'bikes' },
+    ];
+
+    var myDrop = new drop({
+      selector: '#myMulti',
+      preselected: [0, 2]
+    });
+    myDrop.toggle();
+  </script> -->
+
+  <!-- Calender Js - (Pallavi Mahajan)- start  (helper.js file)-->
+
+  <!-- <div class="material">
+       <div id='eventCalender'></div>
+	</div>  -->
+
+  <!-- Script to limit max length in input type number start (pallavi)-->
+  <script>
+    $(document).ready(function () {
+      $(".num").keypress(function () {
+        if ($(this).val().length == $(this).attr("maxlength")) {
+          return false;
+        }
+      });
+    });
+  </script>
+  <!-- Script to limit max length in input type number end -->
+
+
+  <!-- Image preview Script Start-->
+  <script>
+    $(function () {
+      var curElement = $('.image');
+      var imagesPreview = function (input, placeToInsertImagePreview) {
+
+        if (input.files) {
+          var filesAmount = input.files.length;
+
+          for (i = 0; i < filesAmount; i++) {
+            var reader = new FileReader();
+
+            reader.onload = function (event) {
+              //  curElement.attr('src', e.target.result);
+              $($.parseHTML('<img>')).attr('src', event.target.result).appendTo(placeToInsertImagePreview);
+
+            }
+
+            reader.readAsDataURL(input.files[i]);
+          }
+        }
+
+      };
+
+      $('#upload-photo').on('change', function () {
+        imagesPreview(this, 'div.gallery');
+      });
+    });
+  </script>
+
+  <!-- <script type="text/javascript">
+  function showPreview(event){
+  if(event.target.files.length > 0){
+    var src = URL.createObjectURL(event.target.files[0]);
+    var preview = document.getElementById("file-ip-1-preview");
+    preview.src = src;
+    preview.style.display = "block";
+  }
+}
+
+</script> -->
+
+  <!-- text slider -->
+  <!-- <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script> -->
+
+  <!-- input date -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js" ></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> -->
+
+  <!-- remeber me -->
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script>
+    $(function () {
+      $('#publish_date').datepicker({
+        dateFormat: 'dd-M-yy',
+        minDate: 1
+      });
+
+      $('.date-icon').on('click', function () {
+        $('#publish_date').focus();
+      })
+    });
+
+    $(function () {
+      $('#start_time').datepicker({
+        dateFormat: 'dd-M-yy',
+        minDate: 1
+      });
+
+      $('.start-date-icon').on('click', function () {
+        $('#start_time').focus();
+      })
+    });
+
+    $(function () {
+      $('#end_time').datepicker({
+        dateFormat: 'dd-M-yy',
+        minDate: 1
+      });
+
+      $('.end-date-icon').on('click', function () {
+        $('#end_time').focus();
+      })
+    });
+
+    $(function () {
+      $('#publish_date').datepicker({
+        dateFormat: 'dd-M-yy',
+        minDate: 1
+      });
+
+      $('.publish-date-icon').on('click', function () {
+        $('#publish_date').focus();
+      })
+    });
+
+    $(function () {
+      $('#event_Date').datepicker({
+        dateFormat: 'dd-M-yy',
+        minDate: 1
+      });
+
+      $('.event-date-icon').on('click', function () {
+        $('#event_Date').focus();
+      })
+    });
+
+
+    $(function () {
+      $('#expire_date').datepicker({
+        dateFormat: 'dd-M-yy',
+        minDate: 1
+      });
+
+      $('.expire-date-icon').on('click', function () {
+        $('#expire_date').focus();
+      })
+    });
+
+    $(function () {
+      $('#publish_date').datepicker({
+        dateFormat: 'dd-M-yy',
+        minDate: 1
+      });
+
+      $('.exam-date-icon').on('click', function () {
+        $('#publish_date').focus();
+      })
+    });
+
+
+  </script>
+
+  <!-- add more -->
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+  <!-- sorting -->
+  <!-- <script>
+    $('sort_table').dataTable({
+    // display everything
+    "iDisplayLength": -1
+});
+  
+</script> -->
+
+
+  <script type="text/javascript">
+    var map;
+
+    function initMap() {
+      var latitude = 18.5330; // YOUR LATITUDE VALUE
+      var longitude = 73.8798; // YOUR LONGITUDE VALUE
+
+      var myLatLng = { lat: latitude, lng: longitude };
+
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: myLatLng,
+        zoom: 14,
+        disableDoubleClickZoom: true, // disable the default map zoom on double click
+      });
+
+      // Update lat/long value of div when anywhere in the map is clicked	
+      google.maps.event.addListener(map, 'click', function (event) {
+        document.getElementById('latclicked').value = event.latLng.lat();
+        document.getElementById('longclicked').value = event.latLng.lng();
+      });
+
+      // Update lat/long value of div when you move the mouse over the map
+      google.maps.event.addListener(map, 'mousemove', function (event) {
+        document.getElementById('latmoved').innerHTML = event.latLng.lat();
+        document.getElementById('longmoved').innerHTML = event.latLng.lng();
+      });
+
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Hello World',
+
+        // setting latitude & longitude as title of the marker
+        // title is shown when you hover over the marker
+        title: latitude + ', ' + longitude
+      });
+
+      // Update lat/long value of div when the marker is clicked
+      marker.addListener('click', function (event) {
+        document.getElementById('latclicked').value = event.latLng.lat();
+        document.getElementById('longclicked').value = event.latLng.lng();
+      });
+
+      // Create new marker on double click event on the map
+      google.maps.event.addListener(map, 'dblclick', function (event) {
+        var marker = new google.maps.Marker({
+          position: event.latLng,
+          map: map,
+          title: event.latLng.lat() + ', ' + event.latLng.lng()
+        });
+
+        // Update lat/long value of div when the marker is clicked
+        marker.addListener('click', function () {
+          document.getElementById('latclicked').value = event.latLng.lat();
+          document.getElementById('longclicked').value = event.latLng.lng();
+        });
+      });
+
+
+    }
+  </script>
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHD2uwGOQP5Kfo7H-bLNZNU8CyeeNwS2Q&callback=initMap&v=weekly"
+    defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- add more option -->
+  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+
+  <!-- Summernote dependency links -->
+
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/codemirror.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/mode/xml/xml.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/2.36.0/formatting.js"></script>
+
+  <!-- <script type="text/javascript" src="../node_modules/purify.js"></script>
+  <script type="text/javascript" src="../node_modules/purify.min.js"></script> -->
+
+  <script>
+    // $(document).on('turbolinks:load', function () {
+    //   $('.summernote').summernote({
+    //     height: 70,  //set editable area's height
+    //     codemirror: { // codemirror options
+    //       theme: 'monokai'
+    //     }
+    //   });
+    // });
+    // $(document).on("click", "a", function () {
+    //   $('.summernote').summernote({
+    //     height: 70,  //set editable area's height
+    //     codemirror: { // codemirror options
+    //       theme: 'monokai'
+    //     }
+    //   });
+    // });
+    $(document).ready(function () {
+      // console.log('Summernote is ready!');
+      $('.summernote').summernote({
+        height: 70,  //set editable area's height
+        codemirror: { // codemirror options
+          theme: 'monokai'
+        },
+        onInit: function () {
+          console.log('Summernote is ready!');
+          // Perform any actions that require the editor to be ready here
+        }
+      });
+    });
+
+    // $(window).on("load", function () {
+    //   alert("Okkk")
+    //   $(document).ready(function () {
+
+    //   });
+    // });
+  </script>
+
+  <!-- <script>
+    var scrollTop=0;
+    var lastScrollTop=0;
+
+    $(window).on('scroll', function() {
+
+       scrollTop = $(this).scrollTop();
+  
+  if (scrollTop > lastScrollTop) {
+    $(".content-wrapper").css("marginTop","0px")
+    
+      $(".scrollbar_css").css({"position":"relative","zIndex":"0","width":"100%","marginLeft":"0"});
+      // $('#header_fade').removeClass('header_fade.fade-in'); 
+      $(".preview_polls_inner_div1").css("marginTop","0px");
+      $(".edit_container_inner").css("marginTop","0px");
+     
+    }
+   else if (scrollTop < lastScrollTop) {
+     
+      $(".scrollbar_css").css({"position":"fixed","zIndex":"9999","width":"1110px","marginLeft":"250px"});
+      $(".content-wrapper").css("marginTop","60px")
+      // $('#header_fade').addClass('header_fade.fade-in');
+      $(".preview_polls_inner_div1").css("marginTop","58px");
+      $(".edit_container_inner").css("marginTop","58px");
+    
+   }
+  
+      lastScrollTop = scrollTop;
+});
+</script> -->
+</body>
+
+</html>

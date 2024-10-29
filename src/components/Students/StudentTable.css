@@ -1,0 +1,31 @@
+/* media query for table content start */
+
+@media screen and (min-width: 250px) and (max-width :1250px) {
+    /* .table-content{
+        width: 100% !important;
+        min-width: 474px;
+        overflow-x: hidden !important;
+    } */
+}
+
+/* media query for table content end */
+
+
+/* media query for student header start */
+@media screen and (min-width: 250px) and (max-width :1280px) {
+      /* .student-header{
+        width: 100%;
+         margin-left: auto;
+        color: black;
+        font-weight: bold; 
+      } */
+}
+
+@media screen and (min-width: 250px) and (max-width :1280px) {
+    .stud_button{
+        width: 135px;
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+        padding-left: 10px !important;
+    }
+}
