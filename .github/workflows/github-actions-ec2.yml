@@ -35,7 +35,7 @@ jobs:
             sudo yum install -y httpd
             sudo systemctl start httpd
             sudo systemctl enable httpd
-            cd /home
+            cd /home/uni/campus3.unicircle.io
             ls
             cd ec2-user
             sudo yum install nodejs npm -y
